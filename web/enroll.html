@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="js/custom.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+
+
+</head>
+<body>
+<div class="sticky-container">
+
+    <ul class="sticky">
+        <li> <img width="32" height="32" title="" alt="" src="https://cdn2.iconfinder.com/data/icons/micon-social-pack/512/facebook-128.png" />
+            <p>Facebook</p>
+        </li>
+        <li> <img width="32" height="32" title="" alt="" src="http://icons.iconarchive.com/icons/limav/flat-gradient-social/512/Twitter-icon.png" />
+            <p>Twitter</p>
+        </li>
+        <li> <img width="32" height="32" title="" alt="" src="http://3835642c2693476aa717-d4b78efce91b9730bcca725cf9bb0b37.r51.cf1.rackcdn.com/Instagram_App_Large_May2016_200.png" />
+            <p>Instagram</p>
+        </li>
+    </ul>
+</div>
+
+
+
+<div class="navbar navbar-default ">
+    <div>
+        <a class="navbar-brand" href="index.html"><img src="img/Roslyn_logo.gif" height="100"/></a>
+    </div>
+    <!-- Login/Sign-in
+         <ul class="nav navbar-nav pull-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+     -->
+</div>
+
+
+
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav  navbar-nav">
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">About
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Our story</a></li>
+                        <li><a href="#">Team members</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Programs
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">Languages</a></li>
+                        <li><a href="#">Social studies</a></li>
+                        <li><a href="#">Music and Arts</a></li>
+                        <li><a href="#">Tests Prep</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admission</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tuition_fees.html">Tuition and fees_plain</a></li>
+                        <li><a href="tuition_fees2.html">Tuition and fees_withtabs</a></li>
+                        <li><a href="enroll.html">Enroll_how_it_should_be</a></li>
+                        <li><a href="enroll2.html">Enroll_temp_solution</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<form class="container" id="contact-form" method="post" action="contact.php" role="form">
+
+    <div class="messages"></div>
+
+    <div class="controls">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">Student's name *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter student's name *" required="required" data-error="Name is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_date">Date of birth *</label>
+                    <input id="form_date" type="text" name="date" class="form-control" placeholder="Please enter date of birth *" required="required" data-error="Birthdate is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_address">Address *</label>
+                    <input id="form_address" type="text" name="address" class="form-control" placeholder="Please enter your address *" required="required" data-error="Address is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_phonehome">Phone (home) *</label>
+                    <input id="form_phonehome" type="phone" name="phonehome" class="form-control" placeholder="Please enter your phone number *" required="required" data-error="Phone number is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_phonecell">Phone (cell) *</label>
+                    <input id="form_phonecell" type="phone" name="phonecell" class="form-control" placeholder="Please enter your phone number *" required="required" data-error="Phone number is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_phonecell">Which programm would you like to attend</label><br>
+                    <label class="checkbox-inline"><input type="checkbox" value="">Childcare</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="">Summer camp</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="">Holiday club</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="">Enrichment school</label>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">Which classes you would like to attend</label>
+                    <textarea id="form_message" name="message" class="form-control"  rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Send">
+            </div>
+        </div>
+
+    </div>
+
+</form>
+
+
+
+
+<footer class="footer">
+    <p id="footer-text">Copyright ©2016 Roslyn Academic Programs</p>
+</footer>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
